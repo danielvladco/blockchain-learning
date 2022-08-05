@@ -9,6 +9,7 @@ Examples:
 Tools/Resources:
 - https://docs.ethers.io/ - Interact with blockchain using a js library, allows to deploy smart contracts and create transactions in the blockchain
 - https://www.alchemy.com/ - Node as a service
+- https://hardhat.org/ - A framework for easily building, compiling and testing smart contracts using fake networks
 
 ### Ethers API
 
@@ -23,7 +24,6 @@ Tools/Resources:
 ### Alchemy
 - Provides tools for monitoring the transactions (successfully/unsuccessful) 
 - See the mempool (Pending tab) - You can debug why a transaction is not going through (for example having too low gas fee)
-- 
 
 
 ### Verify & Publish using Etherscan
@@ -34,3 +34,8 @@ Now everyone can read the code for the contract !
 Interact with the published contract:
 - Read Contract - This tab has all the read methods from a contract
 - Write Contract - This tab has all the write methods for the contract
+
+>Hardhat allows to verify programatically 
+### Hardhat
+- Deploy with the `--network` flag allows to deploy in the specified network, the networks are configured in `hardhat.config.ts`  
+- Can att tasks to the hardhat CLI. Most of the time will use scripts

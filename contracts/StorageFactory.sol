@@ -20,7 +20,7 @@ contract StorageFactory {
         storages[_simpleStorageIndex].store(_name);
     }
 
-    function get(uint _simpleStorageIndex, string memory _name) public view returns (string) {
+    function get(uint _simpleStorageIndex) public view returns (string memory) {
         return storages[_simpleStorageIndex].name();
     }
 }

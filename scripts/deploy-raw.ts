@@ -14,7 +14,6 @@ async function main() {
         gasPrice: 20000000000,
         gasLimit: 6721975,
         value: 0,
-        to: null,
         data: `0x${binary}`,
         chainId: 1337, // Chain ID is different from network id for some reason 5777,
     })
