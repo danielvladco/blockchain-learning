@@ -6,6 +6,7 @@
     "solc": "^0.8.15"
   },
   "scripts": {
-    "compile": "yarn solcjs --bin --abi --include-path ./node_modules --base-path . -o ./artifacts ./contracts/FundMe.sol"
+    "compile:FundMe": "yarn solcjs --bin --abi --include-path ./node_modules --base-path . -o ./artifacts ./contracts/FundMe.sol",
+    "compile:SimpleStorage": "yarn solcjs --bin --abi --include-path ./node_modules --base-path . -o ./artifacts ./contracts/SimpleStorage.sol"
   }
 }
