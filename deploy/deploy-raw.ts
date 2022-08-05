@@ -1,12 +1,12 @@
-const {Wallet, providers: {JsonRpcProvider}} = require("ethers")
-const fs = require("fs-extra");
-require("dotenv").config()
+import {providers, Wallet} from "ethers"
+import {readFileSync} from "fs-extra"
+import "dotenv/config"
 
 async function main() {
     // Deploy the Ganache server!
-    const provider = new JsonRpcProvider(process.env.BLOCKCHAIN_SERVER);
-    const wallet = new Wallet(process.env.PRIVATE_KEY, provider);
-    const binary = fs.readFileSync("./artifacts/contracts_SimpleStorage_sol_SimpleStorage.bin", "utf8")
+    const provider = new providers.JsonRpcProvider(process.env.RPC_URL!);
+    const wallet = new Wallet(process.env.PRIVATE_KEY!, provider);
+    const binary = readFileSync("./artifacts/contracts_SimpleStorage_sol_SimpleStorage.bin", "utf8")
 
     const nonce = await wallet.getTransactionCount()
     const sentTxRes = await wallet.sendTransaction({
