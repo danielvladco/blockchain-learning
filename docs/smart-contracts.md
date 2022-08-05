@@ -3,7 +3,7 @@
 ### Check contracts for smart contracts examples
 
 
-Getting started reosources:
+Tools/Resources:
 - https://solidity-by-example.org/ - Learn solidity concepts by example 
 - https://eth-converter.com/ - convert ETH/Wei/Gwei
 - https://etherscan.io/ - monitor transactions in the blockchain
