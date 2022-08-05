@@ -9,3 +9,8 @@ Examples:
 Tools:
 - https://docs.ethers.io - Interact with blockchain using a js library, allows to deploy smart contracts and create transactions in the blockchain 
 
+### Ethers API
+
+`wallet.enrypt()` - Encrypt a private key, so it can be decrypted only using a password
+`wallet.fromEncryptedJson()` - Create a wallet from an encrypted json
+`wallet.connect()` - Connect to a provider
