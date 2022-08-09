@@ -7,6 +7,12 @@ import "./tasks/block-number"
 const config: HardhatUserConfig = {
     defaultNetwork: "hardhat",
     networks: {
+        // hardhat: {
+        //     forking: {
+        //         url: "" // address of the mainnet
+        // will also have hake mainnet accounts
+        //     }
+        // },
         rinkeby: {
             url: process.env.RPC_URL!,
             accounts: [process.env.PRIVATE_KEY!],

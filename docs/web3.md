@@ -16,6 +16,7 @@ Tools/Resources:
 `wallet.enrypt()` - Encrypt a private key, so it can be decrypted only using a password
 `wallet.fromEncryptedJson()` - Create a wallet from an encrypted json
 `wallet.connect()` - Connect to a provider
+`ethers.getContractAt("ABI", "0xaddress")` - Get a contract by address
 
 ### Connect to a blockchain
 - Run a `geth` node locally and connect to it
@@ -36,6 +37,10 @@ Interact with the published contract:
 - Write Contract - This tab has all the write methods for the contract
 
 >Hardhat allows to verify programatically 
+
 ### Hardhat
 - Deploy with the `--network` flag allows to deploy in the specified network, the networks are configured in `hardhat.config.ts`  
 - Can att tasks to the hardhat CLI. Most of the time will use scripts
+- MainNet forking - Copy the mainnet in the local machine and work with it locally
+  - Pros: Quick, easy, close to the original env
+  - Cons: Need an API? some contracts are hard to work with

@@ -1,4 +1,5 @@
 # Smart contracts
+Smart contracts hold funds like any other user. You can withdraw the funds if you set the original sender as the owner;
 
 ### Check contracts for smart contracts examples
 
@@ -9,6 +10,8 @@ Tools/Resources:
 - https://etherscan.io/ - monitor transactions in the blockchain
 - https://faucets.chain.link/rinkeby - fund testnet accounts
 - https://remix.ethereum.org/ - In browser IDE for working with smart contracts
+- https://speedrunethereum.com/ - Learn Ethereum quickly
+- https://github.com/scaffold-eth/scaffold-eth - Frontend for smart contracts for quick devel
 
 Code Examples:
  - SimpleStorage.sol - Is a simple example showing that you can store data in the blockchain storage
