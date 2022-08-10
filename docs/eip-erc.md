@@ -22,3 +22,7 @@ Upload on:
 - https://app.pinata.cloud/
 - https://nft.storage/
 - https://ipfs.io
+
+NFT Examples:
+- BasicNFT.sol
+- RandomIpfsNft.sol

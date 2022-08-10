@@ -5,6 +5,7 @@ Smart contracts hold funds like any other user. You can withdraw the funds if yo
 
 
 Tools/Resources:
+- https://docs.soliditylang.org/ - Solidity lang docs
 - https://solidity-by-example.org/ - Learn solidity concepts by example 
 - https://eth-converter.com/ - convert ETH/Wei/Gwei
 - https://etherscan.io/ - monitor transactions in the blockchain
@@ -80,3 +81,14 @@ Special functions:
 - `receive() external payable` - Is called whenever a transaction is sent without calldata
 - `fallback() external payable` - Is called when calldata is present but no function is defined for the calldata (like a default in a switch statement)
  
+### EVM / ABI Encode /Opcodes
+- https://docs.soliditylang.org/en/v0.8.16/cheatsheet.html#global-variables
+- `abi.eancodePacked()` - Encodes anything in binary format (can be used for concatenating strings)
+- https://evm.codes/ - All evm opcodes
+- `call` - Call functions to change the state of the blockchain
+- `staticcall` - Call functions without changing the state (view/pure)
+
+### Contract Deployment
+- TX.to = null
+- TX.data = <contract init code & contract bytecode>
+- EncodingDecoding.sol - Check for examples
