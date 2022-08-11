@@ -13,6 +13,7 @@ Tools/Resources:
 - https://remix.ethereum.org/ - In browser IDE for working with smart contracts
 - https://speedrunethereum.com/ - Learn Ethereum quickly
 - https://github.com/scaffold-eth/scaffold-eth - Frontend for smart contracts for quick devel
+- https://ethgasstation.info/ - Recommended Gas prices
 
 Code Examples:
  - SimpleStorage.sol - Is a simple example showing that you can store data in the blockchain storage
